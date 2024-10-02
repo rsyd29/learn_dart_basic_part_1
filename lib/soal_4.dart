@@ -20,7 +20,7 @@ void main() {
         print('Saldo anda adalah Rp. $balance');
         break;
       case '2':
-        // Menu Top Up
+        // Opsi Top Up
         stdout.write('Masukkan jumlah top up: ');
         int? topUpAmount = int.tryParse(stdin.readLineSync()!);
         if (topUpAmount != null && topUpAmount > 0) {
@@ -31,7 +31,7 @@ void main() {
         }
         break;
       case '3':
-        // Menu Belanja
+        // Opsi Belanja
         stdout.write('Masukkan jumlah belanja: ');
         int? purchaseAmount = int.tryParse(stdin.readLineSync()!);
         if (purchaseAmount != null && purchaseAmount > 0) {
@@ -46,7 +46,7 @@ void main() {
         }
         break;
       case '4':
-        // Menu Keluar
+        // Opsi Keluar
         running = false;
         print('Terima kasih telah menggunakan e-wallet.');
         break;
